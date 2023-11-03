@@ -1,4 +1,3 @@
-// Home.js
 import React from 'react';
 import ProjectOverview from './ProjectOverview';
 import './static/styles.css';
@@ -7,19 +6,19 @@ function Home() {
   const projects = [
     {
       title: 'Keeper App Project',
-      image: '/Keeper_App.png', 
+      image: process.env.PUBLIC_URL + '/Keeper_App.png',
     },
     {
       title: 'Secrets Project',
-      image: '/Secrets.png', 
+      image: process.env.PUBLIC_URL + '/Secrets.png',
     },
-    {  
+    {
       title: 'ToDoList Project',
-      image: '/ToDoList.png', 
+      image: process.env.PUBLIC_URL + '/ToDoList.png',
     },
     {
       title: 'Anime Finder Project',
-      image: '/Anime.png', 
+      image: process.env.PUBLIC_URL + '/Anime.png',
     },
   ];
 

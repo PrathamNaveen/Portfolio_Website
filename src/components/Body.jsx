@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import CustomButton from './CustomButton';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import './static/styles.css';
+import React, { useState } from "react";
+import CustomButton from "./CustomButton";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
+import "./static/styles.css";
 
 function Body({ activeSection }) {
   return (
@@ -12,9 +12,9 @@ function Body({ activeSection }) {
       <div className="flex flex-col items-center space-y-4 p-4">
         {/* Profile Picture */}
         <img
-          src="/Pratham.jpg" // Assuming the image is in the "public" directory
+          src={process.env.PUBLIC_URL + "/Pratham.jpg"}
           alt="My Profile Picture"
-          className="w-48 h-64 rounded-lg mb-8" // Adjusted height, rounded-lg, and added mb-8
+          className="w-48 h-64 rounded-lg mb-8"
         />
 
         <div className="flex space-x-4">
@@ -31,17 +31,15 @@ function Body({ activeSection }) {
       {/* Right Side Container */}
       {console.log("activeSection:", activeSection)}
       <div className="right-container p-4">
-        {activeSection === 'Home' && <Home />}
-        {activeSection === 'About' && <About />}
-        {activeSection === 'More Projects' && (
-          <div>
-            {/* Content for Projects section */}
-          </div>
+        {activeSection === "Home" && <Home />}
+        {activeSection === "About" && <About />}
+        {activeSection === "More Projects" && (
+          <div>{/* Content for Projects section */}</div>
         )}
-        {activeSection === 'Contact' && <Contact />}
+        {activeSection === "Contact" && <Contact />}
       </div>
     </div>
   );
 }
- 
+
 export default Body;
