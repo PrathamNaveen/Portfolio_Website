@@ -43,5 +43,5 @@ function Body({ activeSection }) {
     </div>
   );
 }
-
+ 
 export default Body;
