@@ -10,18 +10,17 @@ function Footer() {
                 <div className="flex flex-wrap justify-center">
                     <ul className="list-none p-0 flex">
                         <SocialLink
-                            url="https://example.com/link1"
+                            url="https://www.linkedin.com/in/prathamnaveen/"
                             text="LinkedIn"
                         />
                         <SocialLink
-                            url="https://example.com/link2"
+                            url="https://github.com/PrathamNaveen"
                             text="GitHub"
                         />
                         <SocialLink
-                            url="https://example.com/link3"
+                            url="https://twitter.com/pratham_naveen"
                             text="Twitter"
                         />
-                        {/* Add more social links here */}
                     </ul>
                 </div>
                 <div className="text-center text-gray-600 text-xs mt-4">

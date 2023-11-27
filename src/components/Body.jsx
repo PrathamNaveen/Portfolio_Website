@@ -24,7 +24,7 @@ function Body({ activeSection }) {
           />
           <CustomButton
             text="Visit LinkedIn"
-            link="https://shorturl.at/jlrCK"
+            link="https://www.linkedin.com/in/prathamnaveen/"
           />
         </div>
       </div>
